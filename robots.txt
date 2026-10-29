@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://baigsmail786-python.github.io/Rankharbor/sitemap.xml
