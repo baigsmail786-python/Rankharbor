@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rankharbor.netlify.app/sitemap.xml
