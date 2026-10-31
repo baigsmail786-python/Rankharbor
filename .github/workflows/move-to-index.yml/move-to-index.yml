@@ -1,0 +1,18 @@
+name: Move to index
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  move:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Copy seo-agency-website.html to index.html
+        run: |
+          cp seo-agency-website.html index.html
+          git config user.name "baigsmail786-python"
+          git config user.email "baigsmail786-python@users.noreply.github.com"
+          git add index.html
+          git commit -m "Update index.html from seo-agency-website.html (GA G-185DNPF2Y2)" || echo "No changes to commit"
+          git push
