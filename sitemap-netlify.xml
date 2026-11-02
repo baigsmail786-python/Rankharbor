@@ -1,23 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://rankharbor.netlify.app/</loc>
-    <lastmod>2026-11-02</lastmod>
-  </url>
-  <url>
-    <loc>https://rankharbor.netlify.app/daily-2026-10-30.html</loc>
-    <lastmod>2026-10-30</lastmod>
-  </url>
-  <url>
-    <loc>https://rankharbor.netlify.app/daily-2026-10-31.html</loc>
-    <lastmod>2026-10-31</lastmod>
-  </url>
-  <url>
-    <loc>https://rankharbor.netlify.app/daily-2026-11-01.html</loc>
-    <lastmod>2026-11-01</lastmod>
-  </url>
-  <url>
-    <loc>https://rankharbor.netlify.app/daily-2026-11-02.html</loc>
-    <lastmod>2026-11-02</lastmod>
-  </url>
+  <url><loc>https://rankharbor.netlify.app/</loc><lastmod>2026-11-02</lastmod></url>
+  <url><loc>https://rankharbor.netlify.app/daily-2026-10-30.html</loc><lastmod>2026-10-30</lastmod></url>
+  <url><loc>https://rankharbor.netlify.app/daily-2026-10-31.html</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://rankharbor.netlify.app/daily-2026-11-01.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://rankharbor.netlify.app/daily-2026-11-02.html</loc><lastmod>2026-11-02</lastmod></url>
+  <url><loc>https://rankharbor.netlify.app/seo-services-lahore.html</loc><lastmod>2026-11-02</lastmod></url>
+  <url><loc>https://rankharbor.netlify.app/seo-services-karachi.html</loc><lastmod>2026-11-02</lastmod></url>
+  <url><loc>https://rankharbor.netlify.app/seo-services-islamabad.html</loc><lastmod>2026-11-02</lastmod></url>
+  <url><loc>https://rankharbor.netlify.app/seo-services-faisalabad.html</loc><lastmod>2026-11-02</lastmod></url>
 </urlset>
