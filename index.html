@@ -879,6 +879,8 @@ document.title=a.title+" | RankHarbor Blog";
 var TITLES={home:"RankHarbor — SEO & Link Building Agency for SaaS and Growing Businesses",services:"All Services | RankHarbor",cases:"Case Studies | RankHarbor",blog:"SEO Blog & Guides | RankHarbor",about:"About | RankHarbor",contact:"Contact | RankHarbor",audit:"Request a Free SEO Audit | RankHarbor",guide:"Getting Started Guide | RankHarbor",privacy:"Privacy Policy | RankHarbor",terms:"Terms of Service | RankHarbor",notfound:"Page Not Found | RankHarbor"};
 function show(name){document.querySelectorAll(".view").forEach(function(v){v.classList.toggle("active",v.getAttribute("data-view")===name);});}
 function navActive(key){document.querySelectorAll("nav.main a").forEach(function(a){a.classList.toggle("active",a.getAttribute("data-nav")===key);});}
+if('scrollRestoration' in history){history.scrollRestoration='manual';}
+window.addEventListener('load',function(){window.scrollTo(0,0);});
 function route(){
 var h=(location.hash||"#/").replace(/^#\/?/,"");
 var parts=h.split("/").filter(Boolean);
