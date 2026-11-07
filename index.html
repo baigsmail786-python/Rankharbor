@@ -102,12 +102,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
---bg:#ffffff;--bg2:#f5f7f8;--bg3:#eef3f1;--ink:#0e1d2e;--ink2:#22364d;--muted:#5a6b7f;--line:#dfe6ea;--line2:#cbd6dd;
---accent:#047857;--accent2:#059669;--accent-soft:#e6f4ee;--navy:#0e1d2e;--card:#ffffff;--shadow:0 10px 30px rgba(14,29,46,.08);
+--bg:#ffffff;--bg2:#f7f6fb;--bg3:#efecfa;--ink:#1c1430;--ink2:#372f4d;--muted:#5f5875;--line:#e3def2;--line2:#c9c0e4;
+--accent:#6d28d9;--accent2:#7c3aed;--accent-soft:#f0eafd;--navy:#241547;--card:#ffffff;--shadow:0 10px 30px rgba(36,21,71,.10);
 --r:14px;--r2:10px;
 }
 @media (prefers-color-scheme:dark){
-:root{--bg:#0c1520;--bg2:#101d2c;--bg3:#132636;--ink:#eef3f6;--ink2:#d3dee7;--muted:#9db0c1;--line:#24384c;--line2:#2f4a63;--accent:#34d399;--accent2:#34d399;--accent-soft:#123327;--card:#101d2c;--shadow:0 10px 30px rgba(0,0,0,.35)}
+:root{--bg:#120d24;--bg2:#181231;--bg3:#1f1840;--ink:#f2effc;--ink2:#d9d2f2;--muted:#a79cc9;--line:#2e2454;--line2:#3f3370;--accent:#a78bfa;--accent2:#c4b5fd;--accent-soft:#2a1f52;--card:#181231;--shadow:0 10px 30px rgba(0,0,0,.4)}
 }
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
@@ -123,18 +123,24 @@ p{margin:0;color:var(--ink2)}
 .lead{font-size:1.08rem;color:var(--muted)}
 .small{font-size:.86rem;color:var(--muted)}
 .label{font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
-.btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff!important;font-weight:700;padding:12px 20px;border-radius:10px;border:1px solid var(--accent);cursor:pointer;font-size:.95rem;text-decoration:none!important}
-.btn:hover{background:var(--accent2);border-color:var(--accent2)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff!important;font-weight:700;padding:12px 20px;border-radius:10px;border:1px solid var(--accent);cursor:pointer;font-size:.95rem;text-decoration:none!important;transition:background .2s ease,border-color .2s ease,transform .2s ease,box-shadow .2s ease}
+.btn:hover{background:var(--accent2);border-color:var(--accent2);transform:translateY(-1px);box-shadow:0 8px 20px rgba(109,40,217,.22)}
 .btn.ghost{background:transparent;color:var(--ink)!important;border-color:var(--line2)}
-.btn.ghost:hover{border-color:var(--accent);color:var(--accent)!important}
+.btn.ghost:hover{border-color:var(--accent);color:var(--accent)!important;box-shadow:0 8px 20px rgba(36,21,71,.10)}
 .btn.light{background:#fff;color:var(--navy)!important;border-color:#fff}
+.btn.light:hover{background:var(--accent-soft)}
+.btn-hero{padding:16px 30px;font-size:1.06rem;border-radius:12px}
+.btn-hero.primary{box-shadow:0 12px 26px rgba(109,40,217,.28)}
+@media(max-width:640px){.btn-hero{padding:15px 22px;font-size:1rem}}
 /* header */
-header.site{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;gap:22px;padding:14px 0}
+header.site{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--line);box-shadow:0 4px 24px rgba(36,21,71,.06)}
+.nav{display:flex;align-items:center;gap:22px;padding:10px 0}
 .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.25rem;color:var(--ink)!important;text-decoration:none!important}
 .logo-mark{width:34px;height:34px;border-radius:9px;background:var(--navy);color:#fff;display:grid;place-items:center;font-size:1rem;flex:none}
 .logo-img{height:84px;width:84px;object-fit:contain;border-radius:10px;flex:none;display:block}
-@media (prefers-color-scheme:dark){.logo-mark{background:var(--accent);color:#06281c}}
+header.site .logo-img{height:58px;width:58px}
+footer.site .logo-img{height:72px;width:72px}
+@media (prefers-color-scheme:dark){.logo-mark{background:var(--accent);color:#241547}}
 .logo span em{font-style:normal;color:var(--accent)}
 nav.main{display:flex;gap:4px;margin-left:auto;align-items:center;flex-wrap:wrap}
 nav.main a{color:var(--ink2);font-weight:600;font-size:.93rem;padding:8px 10px;border-radius:8px;text-decoration:none!important}
@@ -143,28 +149,31 @@ nav.main a:hover,nav.main a.active{color:var(--accent);background:var(--accent-s
 .drop-menu{position:absolute;top:calc(100% + 6px);left:0;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);min-width:260px;padding:8px;display:none}
 .drop:hover .drop-menu,.drop:focus-within .drop-menu{display:block}
 .drop-menu a{display:block;padding:9px 10px}
-.nav-cta{margin-left:8px}
+.nav-cta{margin-left:8px;padding:11px 18px;white-space:nowrap}
 .burger{display:none;margin-left:auto;background:none;border:1px solid var(--line);border-radius:9px;padding:9px 12px;font-size:1.1rem;color:var(--ink);cursor:pointer}
 .mobile-menu{display:none;border-top:1px solid var(--line);padding:12px 0 18px}
 .mobile-menu.open{display:block}
 .mobile-menu a{display:block;padding:10px 4px;color:var(--ink);font-weight:600;border-bottom:1px solid var(--line)}
 .mobile-menu a.sub{padding-left:18px;font-weight:500;color:var(--muted);font-size:.93rem}
 /* layout */
-section.block{padding:64px 0}
+section.block{padding:76px 0}
 section.alt{background:var(--bg2)}
-.sec-head{max-width:720px;margin-bottom:32px}
+.sec-head{max-width:720px;margin-bottom:38px}
 .sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
-.sec-head p{margin-top:10px;color:var(--muted)}
-.grid{display:grid;gap:18px}
+.sec-head h2{margin-top:8px}
+.sec-head h2::after{content:"";display:block;width:52px;height:4px;border-radius:99px;background:var(--accent);margin-top:14px}
+.sec-head.center h2::after{margin-left:auto;margin-right:auto}
+.sec-head p{margin-top:12px;color:var(--muted);font-size:1.02rem}
+.grid{display:grid;gap:20px}
 .g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px}
-.card:hover{border-color:var(--line2)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px;transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease}
+.card:hover{border-color:var(--accent);box-shadow:0 14px 32px rgba(36,21,71,.10);transform:translateY(-3px)}
 .icon{width:44px;height:44px;border-radius:11px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font-size:1.25rem;margin-bottom:14px}
 .card ul{margin:12px 0 0;padding-left:18px;color:var(--muted);font-size:.93rem}
 .card ul li{margin:4px 0}
 .more{font-weight:700;font-size:.93rem;display:inline-block;margin-top:14px}
 /* hero */
-.hero{padding:56px 0 64px;background:linear-gradient(180deg,var(--bg3),var(--bg))}
+.hero{padding:64px 0 72px;background:linear-gradient(180deg,var(--bg3),var(--bg))}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
 .hero h1{margin:14px 0 16px}.hero .lead{max-width:560px}
 .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
@@ -178,9 +187,20 @@ section.alt{background:var(--bg2)}
 .linklist{font-size:.86rem;color:var(--muted)}
 .linklist div{display:flex;justify-content:space-between;padding:7px 0;border-top:1px solid var(--line)}
 .tag{font-size:.72rem;font-weight:700;padding:2px 8px;border-radius:99px;background:var(--accent-soft);color:var(--accent)}
+/* trust strip */
+.trust-strip{background:var(--navy);color:#fff}
+.trust-strip .wrap{display:flex;flex-wrap:wrap;gap:8px 0;align-items:center;justify-content:center;padding-top:16px;padding-bottom:16px}
+.trust-item{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.95rem;color:#fff;padding:2px 18px}
+.trust-item+.trust-item{border-left:1px solid rgba(255,255,255,.28)}
+.trust-item .t-ic{color:#c4b5fd;font-weight:800}
+@media(max-width:640px){.trust-item{padding:2px 10px;font-size:.88rem}.trust-item+.trust-item{border-left:none}}
+/* why RankHarbor + step extras */
+.why-sec{background:var(--accent-soft)}
+.step-price{font-weight:800;color:var(--accent)}
+.step-cta{font-weight:700;font-size:.92rem;display:inline-block;margin-top:12px}
 /* steps */
-.step-num{width:38px;height:38px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:800;margin-bottom:12px}
-@media (prefers-color-scheme:dark){.step-num{background:var(--accent);color:#06281c}}
+.step-num{width:40px;height:40px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:800;margin-bottom:14px;box-shadow:0 6px 14px rgba(109,40,217,.25)}
+@media (prefers-color-scheme:dark){.step-num{background:var(--accent);color:#241547}}
 /* pricing */
 .price-card.featured{border:2px solid var(--accent);position:relative}
 .price{font-size:1.5rem;font-weight:800;margin:10px 0 4px}
@@ -203,7 +223,8 @@ textarea{min-height:110px;resize:vertical}
 .notice.ok{border-color:var(--accent);background:var(--accent-soft)}
 .notice.bad{border-color:#b91c1c}
 /* faq */
-details.faq{border:1px solid var(--line);border-radius:12px;background:var(--card);margin-bottom:10px}
+details.faq{border:1px solid var(--line);border-radius:12px;background:var(--card);margin-bottom:10px;transition:border-color .2s ease}
+details.faq:hover{border-color:var(--accent)}
 details.faq summary{cursor:pointer;font-weight:700;padding:16px 18px;list-style:none}
 details.faq summary::-webkit-details-marker{display:none}
 details.faq .faq-body{padding:0 18px 16px;color:var(--muted)}
@@ -228,16 +249,16 @@ details.faq .faq-body{padding:0 18px 16px;color:var(--muted)}
 .rel-links b{display:block;margin-bottom:8px}
 .rel-links a{display:inline-block;margin:0 16px 6px 0;font-weight:600}
 /* cta band + footer */
-.cta-band{background:var(--navy);color:#fff;border-radius:18px;padding:40px;text-align:center}
-.cta-band h2{color:#fff}.cta-band p{color:#c7d5e2;margin:12px auto 22px;max-width:560px}
-footer.site{background:var(--navy);color:#c7d5e2;margin-top:0}
+.cta-band{background:var(--navy);color:#fff;border-radius:18px;padding:44px 40px;text-align:center;box-shadow:0 24px 48px rgba(36,21,71,.25)}
+.cta-band h2{color:#fff}.cta-band p{color:#ddd5f5;margin:12px auto 22px;max-width:560px}
+footer.site{background:var(--navy);color:#ddd5f5;margin-top:0}
 footer.site .wrap{padding-top:48px;padding-bottom:28px}
 footer.site h4{color:#fff;font-size:.95rem;margin-bottom:12px}
-footer.site a{color:#c7d5e2;display:block;padding:3px 0;font-size:.92rem}
-footer.site p{color:#c7d5e2}
+footer.site a{color:#ddd5f5;display:block;padding:3px 0;font-size:.92rem}
+footer.site p{color:#ddd5f5}
 footer.site .logo{color:#fff!important}
 .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}
-.foot-bottom{border-top:1px solid #24405c;margin-top:32px;padding-top:18px;display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between;font-size:.85rem}
+.foot-bottom{border-top:1px solid #453073;margin-top:32px;padding-top:18px;display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between;font-size:.85rem}
 /* views */
 .view{display:none}.view.active{display:block}
 .crumbs{font-size:.86rem;color:var(--muted);padding:22px 0 0}
@@ -254,13 +275,15 @@ table.spec th{background:var(--bg2)}
 .answer-box .ab-label{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:6px}
 .answer-box p{font-size:1.02rem;color:var(--ink)}
 .qa-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-.qa-card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.qa-card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px;transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease}
+.qa-card:hover{border-color:var(--accent);box-shadow:0 12px 28px rgba(36,21,71,.09);transform:translateY(-2px)}
 .qa-card h3{font-size:1.05rem;margin-bottom:8px}
 .qa-card p{color:var(--muted);font-size:.95rem}
 @media(max-width:640px){.qa-grid{grid-template-columns:1fr}}
 @media(max-width:960px){.g4{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(2,1fr)}.hero-grid{grid-template-columns:1fr}.foot-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:640px){nav.main,.nav-cta{display:none}.burger{display:block}.g2,.g3,.g4{grid-template-columns:1fr}section.block{padding:44px 0}.cta-band{padding:28px 20px}.kpis{grid-template-columns:1fr 1fr 1fr}.foot-grid{grid-template-columns:1fr}}
 </style>
+<script>history.scrollRestoration='manual';window.addEventListener('load',function(){window.scrollTo(0,0);});</script>
 </head>
 <body>
 <header class="site">
@@ -301,13 +324,13 @@ table.spec th{background:var(--bg2)}
 <span class="label">SEO &amp; Link-Building Agency</span>
 <h1>Build Authority. Improve Rankings. Grow Organic Traffic.</h1>
 <p class="lead">Strategic SEO and link-building solutions for SaaS companies and growing businesses. From relevant backlink acquisition to technical SEO, we help you build a stronger foundation for organic growth.</p>
-<div class="cta-row"><a class="btn" href="#/audit">Get a Free SEO Audit</a><a class="btn ghost" href="#/services">Explore Our Services</a></div>
+<div class="cta-row"><a class="btn btn-hero primary" href="#/audit">Get a Free SEO Audit</a><a class="btn ghost btn-hero" href="#/services">View Services</a></div>
 <p class="hero-note">For SaaS founders, marketing managers, agencies and SMBs across the US, UK, Canada, Australia and other English-speaking markets. No ranking guarantees — just transparent, quality-focused work.</p>
 </div>
 <div class="dash" role="img" aria-label="Illustrative SEO dashboard showing keyword, backlink and crawl health panels">
 <div class="dash-head"><b>Campaign overview</b><span>Illustrative view</span></div>
 <div class="kpis"><div class="kpi"><span>Tracked keywords</span><b>Keyword set</b></div><div class="kpi"><span>Referring domains</span><b>Backlink profile</b></div><div class="kpi"><span>Crawl health</span><b>Technical checks</b></div></div>
-<svg viewBox="0 0 420 130" width="100%" height="110" aria-hidden="true"><polyline points="0,105 60,95 120,88 180,70 240,62 300,44 360,34 420,22" fill="none" stroke="#059669" stroke-width="3"/><polyline points="0,115 60,110 120,106 180,98 240,92 300,84 360,76 420,68" fill="none" stroke="#94a8ba" stroke-width="2" stroke-dasharray="5 4"/><circle cx="300" cy="44" r="4" fill="#059669"/><circle cx="420" cy="22" r="4" fill="#059669"/></svg>
+<svg viewBox="0 0 420 130" width="100%" height="110" aria-hidden="true"><polyline points="0,105 60,95 120,88 180,70 240,62 300,44 360,34 420,22" fill="none" stroke="#7c3aed" stroke-width="3"/><polyline points="0,115 60,110 120,106 180,98 240,92 300,84 360,76 420,68" fill="none" stroke="#b7a8e0" stroke-width="2" stroke-dasharray="5 4"/><circle cx="300" cy="44" r="4" fill="#7c3aed"/><circle cx="420" cy="22" r="4" fill="#7c3aed"/></svg>
 <div class="linklist">
 <div><span>Relevant guest post — SaaS publication</span><span class="tag">Editorial review</span></div>
 <div><span>Contextual link insertion — existing article</span><span class="tag">Relevance check</span></div>
@@ -315,6 +338,13 @@ table.spec th{background:var(--bg2)}
 </div>
 <p class="small" style="margin-top:10px">Sample layout only — your dashboard reflects your own campaign data once work begins.</p>
 </div>
+</div></div>
+
+<div class="trust-strip" role="note" aria-label="RankHarbor at a glance"><div class="wrap">
+<span class="trust-item"><span class="t-ic" aria-hidden="true">✓</span>Founded by Faiz Baig</span>
+<span class="trust-item"><span class="t-ic" aria-hidden="true">✓</span>Free SEO Audit</span>
+<span class="trust-item"><span class="t-ic" aria-hidden="true">✓</span>No ranking guarantees</span>
+<span class="trust-item"><span class="t-ic" aria-hidden="true">✓</span>Based in Faisalabad, Pakistan</span>
 </div></div>
 
 <section class="block alt"><div class="wrap">
@@ -346,12 +376,21 @@ table.spec th{background:var(--bg2)}
 </div></section>
 
 <section class="block"><div class="wrap">
-<div class="sec-head"><span class="label">Process</span><h2>How it works</h2></div>
+<div class="sec-head"><span class="label">Process</span><h2>How it works</h2><p>Getting started is simple and low-risk: begin with a free audit, see the full picture before you commit, then grow month by month with clear reporting at every step.</p></div>
 <div class="grid g4">
-<div class="card"><div class="step-num">1</div><h3>Discovery &amp; requirements</h3><p>We learn your goals, market, target pages and constraints, and review your current SEO position.</p></div>
-<div class="card"><div class="step-num">2</div><h3>Strategy &amp; research</h3><p>Keyword, competitor and publisher research turns into a concrete plan with priorities and timelines.</p></div>
-<div class="card"><div class="step-num">3</div><h3>Execution &amp; quality checks</h3><p>Outreach, content and technical work is carried out and checked against agreed quality standards.</p></div>
-<div class="card"><div class="step-num">4</div><h3>Reporting &amp; optimization</h3><p>You receive clear reports on work completed and next steps, and the strategy is refined each cycle.</p></div>
+<div class="card"><div class="step-num">1</div><h3>Free SEO Audit</h3><p>Start free. We review your website manually — technical issues, on-page opportunities and your backlink profile — and learn your goals, market and target pages.</p><a class="step-cta" href="#/audit">Request your free audit →</a></div>
+<div class="card"><div class="step-num">2</div><h3>Full SEO Audit — <span class="step-price">PKR 15,000</span></h3><p>Want the complete picture? The full audit adds keyword and competitor research and ends with a prioritized action plan — a concrete strategy with priorities and timelines.</p><a class="step-cta" href="#/contact">Order the Full Audit →</a></div>
+<div class="card"><div class="step-num">3</div><h3>Monthly SEO plan</h3><p>Choose a monthly plan that fits your market and budget. Technical fixes, content work and link building are carried out each month and checked against agreed quality standards.</p><a class="step-cta" href="#pricing">See monthly plans →</a></div>
+<div class="card"><div class="step-num">4</div><h3>Grow organic traffic month by month</h3><p>SEO compounds over time. You receive clear reports on work completed and next steps, and the strategy is refined each cycle as your organic traffic grows month by month.</p><a class="step-cta" href="#/services/monthly-seo">How monthly SEO runs →</a></div>
+</div></div></section>
+
+<section class="block why-sec"><div class="wrap">
+<div class="sec-head"><span class="label">Why RankHarbor</span><h2>Why RankHarbor</h2><p>Plenty of agencies promise the top of Google. We would rather earn your trust with honest work, published prices and reporting you can check — here is what makes RankHarbor different.</p></div>
+<div class="grid g4">
+<div class="card"><div class="icon">▤</div><h3>Honest reporting</h3><p>Every month you see the work completed, the live URLs earned and the next steps — in plain language, including when a month is slower than hoped.</p></div>
+<div class="card"><div class="icon">◎</div><h3>No ranking guarantees</h3><p>Google controls its results, so we never promise specific rankings, traffic or revenue. We commit to the work itself: relevant placements and clear deliverables.</p></div>
+<div class="card"><div class="icon">✓</div><h3>Free audit first</h3><p>Start with a free preliminary audit of your own site, reviewed manually before you pay anything — so you only buy the work you actually need.</p></div>
+<div class="card"><div class="icon">✦</div><h3>Founder-led work by Faiz Baig</h3><p>RankHarbor is founder-led: Faiz Baig is your main point of contact and personally oversees your campaign — no hand-offs to anonymous account managers.</p></div>
 </div></div></section>
 
 <section class="block alt"><div class="wrap"><div class="grid g2" style="align-items:start">
@@ -442,7 +481,7 @@ table.spec th{background:var(--bg2)}
 <section class="block"><div class="wrap"><div class="cta-band">
 <h2>Ready to Build a Stronger Organic Growth Strategy?</h2>
 <p>Tell us about your website and goals. We will reply with an honest assessment and clear next steps — no obligation, no ranking promises.</p>
-<div class="cta-row" style="justify-content:center"><a class="btn light" href="#/audit">Get a Free SEO Audit</a><a class="btn ghost" style="color:#fff!important;border-color:#7d99b5" href="#/contact">Discuss Your Project</a></div>
+<div class="cta-row" style="justify-content:center"><a class="btn light" href="#/audit">Get a Free SEO Audit</a><a class="btn ghost" style="color:#fff!important;border-color:#a78bfa" href="#/contact">Discuss Your Project</a></div>
 </div></div></section>
 </section>
 <!-- ============ SERVICES INDEX ============ -->
@@ -619,7 +658,7 @@ table.spec th{background:var(--bg2)}
 <a href="#/contact">Contact form</a><a href="#/audit">Request an audit</a>
 <p style="font-size:.92rem;margin-top:8px">WhatsApp: <a href="https://wa.me/923207321850" target="_blank" rel="noopener" style="display:inline">03207321850</a><br>LinkedIn: <a href="https://www.linkedin.com/in/faiz-mughal-95b893369" target="_blank" rel="noopener" style="display:inline">Faiz Baig on LinkedIn</a></p></div>
 </div>
-<div style="margin-top:28px;border-top:1px solid #24405c;padding-top:18px"><h4 style="color:#fff;font-size:.95rem;margin-bottom:12px">SEO services by city</h4><p style="font-size:.92rem"><a href="./seo-services-lahore.html" style="display:inline">SEO services in Lahore</a> &nbsp;·&nbsp; <a href="./seo-services-karachi.html" style="display:inline">SEO services in Karachi</a> &nbsp;·&nbsp; <a href="./seo-services-islamabad.html" style="display:inline">SEO services in Islamabad</a> &nbsp;·&nbsp; <a href="./seo-services-faisalabad.html" style="display:inline">SEO services in Faisalabad</a> &nbsp;·&nbsp; <a href="./seo-services-rawalpindi.html" style="display:inline">SEO services in Rawalpindi</a> &nbsp;·&nbsp; <a href="./seo-services-multan.html" style="display:inline">SEO services in Multan</a> &nbsp;·&nbsp; <a href="./seo-services-peshawar.html" style="display:inline">SEO services in Peshawar</a> &nbsp;·&nbsp; <a href="./seo-services-sialkot.html" style="display:inline">SEO services in Sialkot</a></p></div> <div class="foot-bottom"><span>© 2026 RankHarbor. All rights reserved.</span><span><a style="display:inline" href="#/privacy">Privacy</a> · <a style="display:inline" href="#/terms">Terms</a> · Cookie Policy: see Privacy Policy</span></div>
+<div class="foot-bottom"><span>© 2026 RankHarbor. All rights reserved.</span><span><a style="display:inline" href="#/privacy">Privacy</a> · <a style="display:inline" href="#/terms">Terms</a> · Cookie Policy: see Privacy Policy</span></div>
 </div></footer>
 <script>
 /* ================= DATA ================= */
@@ -754,7 +793,7 @@ var CATS=["All","SEO Basics","Link Building","SaaS SEO","Technical SEO","On-Page
 function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;");}
 function svcCard(s){return '<article class="card"><div class="icon">'+s.icon+'</div><h3>'+s.title+'</h3><p style="color:var(--muted);font-size:.94rem;margin-top:6px">'+s.short+'</p><ul>'+s.benefits.map(function(b){return "<li>"+b+"</li>";}).join("")+'</ul><a class="more" href="#/services/'+s.slug+'">Learn more →</a><br><a class="more" href="#/audit" style="color:var(--ink2)">Get a free audit</a></article>';}
 function faqHTML(list){return list.map(function(f){return '<details class="faq"><summary>'+f[0]+'</summary><div class="faq-body">'+f[1]+'</div></details>';}).join("");}
-function blogCard(a){var thumb=a.hero?'<div class="blog-thumb" style="background:'+a.color+' url(\''+a.hero+'\') center/cover no-repeat"><span>'+esc(a.cat.toUpperCase())+'</span></div>':'<div class="blog-thumb" style="background:'+a.color+'"><span>'+esc(a.cat.toUpperCase())+'</span></div>';return '<article class="card">'+thumb+'<div class="meta"><span>'+a.date+'</span><span>·</span><span>'+a.mins+' min read</span><span>·</span><span>'+a.cat+'</span></div><h3>'+a.title+'</h3><p style="color:var(--muted);font-size:.94rem;margin-top:6px">'+a.excerpt+'</p><a class="more" href="./'+a.slug+'.html">Read more →</a></article>';}
+function blogCard(a){var thumb=a.hero?'<div class="blog-thumb" style="background:'+a.color+' url(\''+a.hero+'\') center/cover no-repeat"><span>'+esc(a.cat.toUpperCase())+'</span></div>':'<div class="blog-thumb" style="background:'+a.color+'"><span>'+esc(a.cat.toUpperCase())+'</span></div>';return '<article class="card">'+thumb+'<div class="meta"><span>'+a.date+'</span><span>·</span><span>'+a.mins+' min read</span><span>·</span><span>'+a.cat+'</span></div><h3>'+a.title+'</h3><p style="color:var(--muted);font-size:.94rem;margin-top:6px">'+a.excerpt+'</p><a class="more" href="#/blog/'+a.slug+'">Read more →</a></article>';}
 function auditFormHTML(p){return '<form class="auditForm" novalidate data-p="'+p+'">'
 +'<div class="field"><label for="'+p+'Name">Your name *</label><input id="'+p+'Name" autocomplete="name"><p class="err">Please enter your name.</p></div>'
 +'<div class="field"><label for="'+p+'Email">Business email *</label><input id="'+p+'Email" type="email" autocomplete="email"><p class="err">Please enter a valid business email.</p></div>'
@@ -844,7 +883,7 @@ document.getElementById("serviceDetail").innerHTML=
 +aeoQA
 +'<h2 style="font-size:1.4rem;margin:30px 0 10px">'+s.title+' — FAQs</h2>'+faqHTML(s.faqs)
 +readingHTML(s)
-+'<div class="cta-band" style="margin-top:30px"><h2>Ready to discuss '+s.title.toLowerCase()+'?</h2><p>Start with a free preliminary audit, or tell us about your project and we will scope a custom proposal.</p><div class="cta-row" style="justify-content:center"><a class="btn light" href="#/audit">Get a Free SEO Audit</a><a class="btn ghost" style="color:#fff!important;border-color:#7d99b5" href="#/contact">Discuss Your Project</a></div></div>'
++'<div class="cta-band" style="margin-top:30px"><h2>Ready to discuss '+s.title.toLowerCase()+'?</h2><p>Start with a free preliminary audit, or tell us about your project and we will scope a custom proposal.</p><div class="cta-row" style="justify-content:center"><a class="btn light" href="#/audit">Get a Free SEO Audit</a><a class="btn ghost" style="color:#fff!important;border-color:#a78bfa" href="#/contact">Discuss Your Project</a></div></div>'
 +'<h3 style="margin:28px 0 12px">Related services</h3><div class="grid g3">'+others.map(svcCard).join("")+'</div>'
 +'</section>';
 document.title=s.title+" | RankHarbor SEO Agency";
@@ -879,8 +918,6 @@ document.title=a.title+" | RankHarbor Blog";
 var TITLES={home:"RankHarbor — SEO & Link Building Agency for SaaS and Growing Businesses",services:"All Services | RankHarbor",cases:"Case Studies | RankHarbor",blog:"SEO Blog & Guides | RankHarbor",about:"About | RankHarbor",contact:"Contact | RankHarbor",audit:"Request a Free SEO Audit | RankHarbor",guide:"Getting Started Guide | RankHarbor",privacy:"Privacy Policy | RankHarbor",terms:"Terms of Service | RankHarbor",notfound:"Page Not Found | RankHarbor"};
 function show(name){document.querySelectorAll(".view").forEach(function(v){v.classList.toggle("active",v.getAttribute("data-view")===name);});}
 function navActive(key){document.querySelectorAll("nav.main a").forEach(function(a){a.classList.toggle("active",a.getAttribute("data-nav")===key);});}
-if('scrollRestoration' in history){history.scrollRestoration='manual';}
-window.addEventListener('load',function(){window.scrollTo(0,0);});
 function route(){
 var h=(location.hash||"#/").replace(/^#\/?/,"");
 var parts=h.split("/").filter(Boolean);
