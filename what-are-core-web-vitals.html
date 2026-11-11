@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Are Core Web Vitals and Why Do They Affect Rankings? | RankHarbor</title>
+<meta name="description" content="What are Core Web Vitals? Learn the LCP, INP and CLS thresholds, what each metric measures, and how to fix the slowest metric first for real users.">
+<link rel="canonical" href="https://baigsmail786-python.github.io/Rankharbor/what-are-core-web-vitals.html">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-185DNPF2Y2"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-185DNPF2Y2');
+</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "What Are Core Web Vitals and Why Do They Affect Rankings?", "description": "What are Core Web Vitals? Learn the LCP, INP and CLS thresholds, what each metric measures, and how to fix the slowest metric first for real users.", "datePublished": "2026-11-07", "author": {"@type": "Person", "name": "Faiz Baig"}, "publisher": {"@type": "Organization", "name": "RankHarbor"}}</script>
+<style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:760px;margin:0 auto;padding:24px;line-height:1.7;color:#1f2937}header a{color:#0e4d3a;font-weight:700;text-decoration:none}h1{line-height:1.3;color:#0e4d3a}.meta{color:#6b7280;font-size:.95em}h2{color:#0e4d3a;margin-top:1.6em}footer{margin-top:3em;border-top:1px solid #e5e7eb;padding-top:1em;color:#6b7280;font-size:.95em}a{color:#0e4d3a}hr{border:none;border-top:1px solid #e5e7eb;margin:2em 0}</style>
+</head>
+<body>
+<header><a href="./">← RankHarbor — SEO &amp; Link Building Agency</a></header>
+<main>
+<p class="meta">Technical SEO · 2026-11-07 · 7 min read</p>
+<h1>What Are Core Web Vitals and Why Do They Affect Rankings?</h1>
+<p><em>What are Core Web Vitals? Learn the LCP, INP and CLS thresholds, what each metric measures, and how to fix the slowest metric first for real users.</em></p>
+<h3>Hook</h3>
+<p>The phrase what are core web vitals describes Google metrics that measure user experience. Google uses them to judge how fast a page loads, responds and stays stable. A page that passes them feels smooth to visitors.</p>
+<p>Most site owners chase a perfect score on a lab test and ignore real visitors. They optimise for one test run while phones on slow networks still struggle. That habit hides the true experience of most users.</p>
+<p>After you read this guide, you will know each metric, its threshold and its fix. You will test your pages with real user data. You will make pages that load fast, respond fast and stay stable.</p>
+<h2>Core Web Vitals Measure Real User Experience</h2>
+<p>The phrase what are core web vitals also answers a simple need for site owners. Google needed a shared way to measure how a page feels to real visitors. It chose three signals that cover loading, response and stability. You use those signals to judge your own pages with the same yardstick.</p>
+<p>Google gathers these metrics from real visits through Chrome user data. Lab tests show one run on one device, while field data shows thousands of real visits. You trust field data more because it reflects slow phones and weak networks. A shop page can pass a lab test and still fail for real shoppers.</p>
+<p>You find your scores in PageSpeed Insights and in Search Console. Both tools show field data when your page earns enough visits. You check the mobile score first because most visitors arrive on phones. You fix the metric that fails most often across your key pages.</p>
+<h2>Largest Contentful Paint Shows How Fast the Main Content Loads</h2>
+<p>Largest Contentful Paint tracks when the largest visible element appears on screen. Google sets the good threshold at LCP 2.5 seconds for most pages. A hero image, a headline block or a video poster often forms that largest element. You speed it up by shrinking that element and by loading it first.</p>
+<p>The phrase what are core web vitals gains meaning when you test a slow hero image. You compress the image and you serve it in a modern format. You preload the hero image so the browser fetches it before other files. A news site that compressed its hero image saw its main content appear far sooner.</p>
+<p>You also cut render blocking files that delay the main content. You remove unused styles and you defer scripts that the page does not need at once. You host fonts locally when the font file slows the first paint. Each cut brings the largest element onto the screen sooner.</p>
+<h2>Interaction to Next Paint Shows How Fast the Page Responds</h2>
+<p>Interaction to Next Paint tracks how fast a page reacts after a visitor taps or clicks. Google sets the good threshold at INP 200 milliseconds for most pages. A slow response makes buttons feel dead and forms feel broken. You keep scripts light so the browser can answer each tap at once.</p>
+<p>Heavy scripts cause most slow responses on real sites. You split long tasks into smaller chunks so the browser can pause between them. You defer third party scripts that do not serve the first screen. A booking form that deferred its chat widget answered taps far faster.</p>
+<p>You test interactions on a real phone, not only on a fast laptop. You tap menus, filters and buttons and you watch for delay. You note the slowest interaction and you fix its script first. Real taps reveal problems that a lab score can hide.</p>
+<h2>Cumulative Layout Shift Shows How Stable the Page Feels</h2>
+<p>The phrase what are core web vitals includes a stability signal that many owners miss. Cumulative Layout Shift tracks how much visible content moves as the page loads. Google sets the good threshold at CLS 0.1 for most pages. A page that shifts its text while you read it frustrates every visitor.</p>
+<p>Images without set sizes cause most layout shifts on content pages. You give each image a width and a height so the browser reserves its space. You avoid injecting banners above content after the page starts to load. A blog that sized its images stopped its text from jumping as readers scrolled.</p>
+<p>Fonts also shift a layout when a web font loads late. You preload the main font and you pick a fallback font with a close match. You keep ads in fixed slots so they cannot push text down. Stable pages keep readers on the page and keep them clicking with confidence.</p>
+<h2>Fix the Slowest Metric First and Test Again</h2>
+<p>You start with the metric that fails on your most visited pages. You open PageSpeed Insights and you read the field data for mobile. You pick one fix, such as compressing the hero image or deferring a script. You apply the fix and you test the page again after a fresh crawl.</p>
+<p>You change one element at a time so you can see what helps. You record the score before the fix and after the fix in a simple sheet. You compare the new field data with the old field data. A clear record stops you from undoing a fix that already works.</p>
+<p>You repeat this cycle across templates, not page by page alone. You fix the header, the footer and the shared scripts once for the whole site. You check a sample of pages after each template fix. Template fixes lift scores across many pages with one change.</p>
+<h2>Frequently Asked Questions</h2>
+<h3>Where can I check Core Web Vitals for my site?</h3>
+<p>You can check PageSpeed Insights for field data on a single page. You can also open Search Console to see scores across many pages at once. You should start with mobile data because most visitors use phones.</p>
+<h3>What is the difference between lab data and field data?</h3>
+<p>Lab data comes from one controlled test run on one device. Field data comes from real visits by real users on varied devices and networks. You should trust field data more when you judge user experience.</p>
+<h3>Does a good LCP score guarantee a top ranking?</h3>
+<p>No, Core Web Vitals form one signal among many ranking signals. You still need strong content, honest links and clear relevance. You should treat speed as a foundation, not as a shortcut to the top.</p>
+<h3>How do I improve LCP on an image heavy page?</h3>
+<p>You should compress the hero image and serve it in a modern format. You should preload the hero image and defer images below the fold. You should also remove scripts that block the first paint.</p>
+<h3>Why does my page shift while it loads?</h3>
+<p>A page shifts when images, ads or fonts load without reserved space. You should set sizes for images and fixed slots for ads. You should preload fonts so text keeps its place.</p>
+<h3>What causes a slow INP score?</h3>
+<p>Long scripts and heavy third party code block the browser from answering taps. You should split long tasks and defer scripts that the first screen does not need. You should test taps on a real phone to find the worst delay.</p>
+<h3>How often should I test Core Web Vitals?</h3>
+<p>You should test key pages after each template change or major release. You should also review Search Console each month for new failures. You should fix new failures before they spread across many pages.</p>
+<h3>Can a fast site still fail Core Web Vitals?</h3>
+<p>Yes, a site can load fast in a lab test and still fail field data on slow networks. You should check real user data in PageSpeed Insights before you trust a lab score. You should optimise for real phones, not for test machines.</p>
+<p>The phrase what are core web vitals describes three signals that shape how visitors feel your site. You track loading with LCP, response with INP and stability with CLS. You fix the slowest metric first and you test with real user data. You repeat the cycle and your pages grow faster, steadier and easier to use.</p>
+<p>Test your homepage in PageSpeed Insights today and note which metric fails first.</p>
+<hr>
+<h2>Related articles</h2>
+<ul><li><a href="./how-long-does-seo-take-to-work.html">How Long Does SEO Take to Work for a New Website?</a></li><li><a href="./what-is-broken-link-building.html">What Is Broken Link Building and How Does It Work?</a></li><li><a href="./what-is-product-led-seo-for-saas.html">What Is Product-Led SEO for SaaS Companies?</a></li></ul>
+<p><a href="./daily-2026-11-07.html">More articles from 7 November 2026</a></p>
+<p><a href="./">Back to the RankHarbor homepage</a></p>
+</main>
+<footer>
+<p>RankHarbor — an SEO &amp; link-building agency founded by Faiz Baig. Contact: <a href="mailto:rankharbor67@gmail.com">rankharbor67@gmail.com</a> · <a href="https://wa.me/923207321850">WhatsApp 03207321850</a></p>
+<p>© 2026 RankHarbor. All rights reserved.</p>
+</footer>
+</body>
+</html>
