@@ -102,190 +102,9 @@
 <link rel="apple-touch-icon" sizes="180x180" href="assets/img/img-4c5d20f8118a.png">
 <title>RankHarbor — SEO & Link Building Agency for SaaS and Growing Businesses</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root{
---bg:#ffffff;--bg2:#f7f6fb;--bg3:#efecfa;--ink:#1c1430;--ink2:#372f4d;--muted:#5f5875;--line:#e3def2;--line2:#c9c0e4;
---accent:#6d28d9;--accent2:#7c3aed;--accent-soft:#f0eafd;--navy:#241547;--card:#ffffff;--shadow:0 10px 30px rgba(36,21,71,.10);
---r:14px;--r2:10px;
-}
-@media (prefers-color-scheme:dark){
-:root{--bg:#120d24;--bg2:#181231;--bg3:#1f1840;--ink:#f2effc;--ink2:#d9d2f2;--muted:#a79cc9;--line:#2e2454;--line2:#3f3370;--accent:#a78bfa;--accent2:#c4b5fd;--accent-soft:#2a1f52;--card:#181231;--shadow:0 10px 30px rgba(0,0,0,.4)}
-}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
-body{margin:0;font-family:"Plus Jakarta Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;font-size:16px}
-a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
-:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
-.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
-h1,h2,h3,h4{line-height:1.2;color:var(--ink);margin:0}
-h1{font-size:clamp(2rem,5vw,3.4rem);font-weight:800;letter-spacing:-.02em}
-h2{font-size:clamp(1.6rem,3.4vw,2.3rem);font-weight:800;letter-spacing:-.015em}
-h3{font-size:1.15rem;font-weight:700}
-p{margin:0;color:var(--ink2)}
-.lead{font-size:1.08rem;color:var(--muted)}
-.small{font-size:.86rem;color:var(--muted)}
-.label{font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
-.btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff!important;font-weight:700;padding:12px 20px;border-radius:10px;border:1px solid var(--accent);cursor:pointer;font-size:.95rem;text-decoration:none!important;transition:background .2s ease,border-color .2s ease,transform .2s ease,box-shadow .2s ease}
-.btn:hover{background:var(--accent2);border-color:var(--accent2);transform:translateY(-1px);box-shadow:0 8px 20px rgba(109,40,217,.22)}
-.btn.ghost{background:transparent;color:var(--ink)!important;border-color:var(--line2)}
-.btn.ghost:hover{border-color:var(--accent);color:var(--accent)!important;box-shadow:0 8px 20px rgba(36,21,71,.10)}
-.btn.light{background:#fff;color:var(--navy)!important;border-color:#fff}
-.btn.light:hover{background:var(--accent-soft)}
-.btn-hero{padding:16px 30px;font-size:1.06rem;border-radius:12px}
-.btn-hero.primary{box-shadow:0 12px 26px rgba(109,40,217,.28)}
-@media(max-width:640px){.btn-hero{padding:15px 22px;font-size:1rem}}
-/* header */
-header.site{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--line);box-shadow:0 4px 24px rgba(36,21,71,.06)}
-.nav{display:flex;align-items:center;gap:22px;padding:10px 0}
-.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.25rem;color:var(--ink)!important;text-decoration:none!important}
-.logo-mark{width:34px;height:34px;border-radius:9px;background:var(--navy);color:#fff;display:grid;place-items:center;font-size:1rem;flex:none}
-.logo-img{height:84px;width:84px;object-fit:contain;border-radius:10px;flex:none;display:block}
-header.site .logo-img{height:58px;width:58px}
-footer.site .logo-img{height:72px;width:72px}
-@media (prefers-color-scheme:dark){.logo-mark{background:var(--accent);color:#241547}}
-.logo span em{font-style:normal;color:var(--accent)}
-nav.main{display:flex;gap:4px;margin-left:auto;align-items:center;flex-wrap:wrap}
-nav.main a{color:var(--ink2);font-weight:600;font-size:.93rem;padding:8px 10px;border-radius:8px;text-decoration:none!important}
-nav.main a:hover,nav.main a.active{color:var(--accent);background:var(--accent-soft)}
-.drop{position:relative}
-.drop-menu{position:absolute;top:calc(100% + 6px);left:0;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);min-width:260px;padding:8px;display:none}
-.drop:hover .drop-menu,.drop:focus-within .drop-menu{display:block}
-.drop-menu a{display:block;padding:9px 10px}
-.nav-cta{margin-left:8px;padding:11px 18px;white-space:nowrap}
-.burger{display:none;margin-left:auto;background:none;border:1px solid var(--line);border-radius:9px;padding:9px 12px;font-size:1.1rem;color:var(--ink);cursor:pointer}
-.mobile-menu{display:none;border-top:1px solid var(--line);padding:12px 0 18px}
-.mobile-menu.open{display:block}
-.mobile-menu a{display:block;padding:10px 4px;color:var(--ink);font-weight:600;border-bottom:1px solid var(--line)}
-.mobile-menu a.sub{padding-left:18px;font-weight:500;color:var(--muted);font-size:.93rem}
-/* layout */
-section.block{padding:76px 0}
-section.alt{background:var(--bg2)}
-.sec-head{max-width:720px;margin-bottom:38px}
-.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
-.sec-head h2{margin-top:8px}
-.sec-head h2::after{content:"";display:block;width:52px;height:4px;border-radius:99px;background:var(--accent);margin-top:14px}
-.sec-head.center h2::after{margin-left:auto;margin-right:auto}
-.sec-head p{margin-top:12px;color:var(--muted);font-size:1.02rem}
-.grid{display:grid;gap:20px}
-.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px;transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease}
-.card:hover{border-color:var(--accent);box-shadow:0 14px 32px rgba(36,21,71,.10);transform:translateY(-3px)}
-.icon{width:44px;height:44px;border-radius:11px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font-size:1.25rem;margin-bottom:14px}
-.card ul{margin:12px 0 0;padding-left:18px;color:var(--muted);font-size:.93rem}
-.card ul li{margin:4px 0}
-.more{font-weight:700;font-size:.93rem;display:inline-block;margin-top:14px}
-/* hero */
-.hero{padding:64px 0 72px;background:linear-gradient(180deg,var(--bg3),var(--bg))}
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
-.hero h1{margin:14px 0 16px}.hero .lead{max-width:560px}
-.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
-.hero-note{margin-top:16px;font-size:.88rem;color:var(--muted)}
-.dash{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:20px}
-.dash-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:14px}
-.dash-head b{font-size:.95rem}.dash-head span{font-size:.75rem;background:var(--accent-soft);color:var(--accent);padding:3px 9px;border-radius:99px;font-weight:700}
-.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
-.kpi{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:10px}
-.kpi b{display:block;font-size:.95rem}.kpi span{font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
-.linklist{font-size:.86rem;color:var(--muted)}
-.linklist div{display:flex;justify-content:space-between;padding:7px 0;border-top:1px solid var(--line)}
-.tag{font-size:.72rem;font-weight:700;padding:2px 8px;border-radius:99px;background:var(--accent-soft);color:var(--accent)}
-/* trust strip */
-.trust-strip{background:var(--navy);color:#fff}
-.trust-strip .wrap{display:flex;flex-wrap:wrap;gap:8px 0;align-items:center;justify-content:center;padding-top:16px;padding-bottom:16px}
-.trust-item{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.95rem;color:#fff;padding:2px 18px}
-.trust-item+.trust-item{border-left:1px solid rgba(255,255,255,.28)}
-.trust-item .t-ic{color:#c4b5fd;font-weight:800}
-@media(max-width:640px){.trust-item{padding:2px 10px;font-size:.88rem}.trust-item+.trust-item{border-left:none}}
-/* why RankHarbor + step extras */
-.why-sec{background:var(--accent-soft)}
-.step-price{font-weight:800;color:var(--accent)}
-.step-cta{font-weight:700;font-size:.92rem;display:inline-block;margin-top:12px}
-/* steps */
-.step-num{width:40px;height:40px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:800;margin-bottom:14px;box-shadow:0 6px 14px rgba(109,40,217,.25)}
-@media (prefers-color-scheme:dark){.step-num{background:var(--accent);color:#241547}}
-/* pricing */
-.price-card.featured{border:2px solid var(--accent);position:relative}
-.price{font-size:1.5rem;font-weight:800;margin:10px 0 4px}
-.badge{position:absolute;top:-13px;left:20px;background:var(--accent);color:#fff;font-size:.72rem;font-weight:800;padding:4px 10px;border-radius:99px;letter-spacing:.05em}
-.price small{font-size:.85rem;font-weight:600;color:var(--muted)}
-.price-group{margin-top:38px}
-.group-head{max-width:720px;margin:0 auto 18px;text-align:center}
-.group-head h3{font-size:1.3rem;font-weight:800}
-.group-head p{color:var(--muted);margin-top:6px;font-size:.95rem}
-.pricing-note{max-width:840px;margin:28px auto 0;text-align:center;color:var(--muted);font-size:.92rem}
-/* forms */
-form .field{margin-bottom:14px}
-label{display:block;font-weight:600;font-size:.9rem;margin-bottom:6px}
-input,select,textarea{width:100%;padding:11px 12px;border:1px solid var(--line2);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit;font-size:.95rem}
-textarea{min-height:110px;resize:vertical}
-.err{color:#b91c1c;font-size:.84rem;margin-top:4px;display:none}
-.field.invalid input,.field.invalid textarea,.field.invalid select{border-color:#b91c1c}
-.field.invalid .err{display:block}
-.notice{border:1px solid var(--line);background:var(--bg2);border-radius:12px;padding:16px;font-size:.92rem}
-.notice.ok{border-color:var(--accent);background:var(--accent-soft)}
-.notice.bad{border-color:#b91c1c}
-/* faq */
-details.faq{border:1px solid var(--line);border-radius:12px;background:var(--card);margin-bottom:10px;transition:border-color .2s ease}
-details.faq:hover{border-color:var(--accent)}
-details.faq summary{cursor:pointer;font-weight:700;padding:16px 18px;list-style:none}
-details.faq summary::-webkit-details-marker{display:none}
-details.faq .faq-body{padding:0 18px 16px;color:var(--muted)}
-/* blog */
-.blog-thumb{height:150px;border-radius:10px;margin-bottom:16px;display:flex;align-items:flex-end;padding:14px;color:#fff;font-weight:800;font-size:.85rem;letter-spacing:.04em}
-.meta{display:flex;gap:10px;flex-wrap:wrap;font-size:.8rem;color:var(--muted);margin:8px 0}
-.chip{font-size:.75rem;font-weight:700;background:var(--bg3);border:1px solid var(--line);color:var(--ink2);padding:4px 10px;border-radius:99px;cursor:pointer}
-.chip.on{background:var(--accent);color:#fff;border-color:var(--accent)}
-/* article */
-.article{max-width:780px;margin:0 auto}
-.article h2{margin:30px 0 10px;font-size:1.45rem}
-.article p{margin:10px 0;color:var(--ink2)}
-.article ul{color:var(--ink2);padding-left:20px}
-.toc{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:var(--bg2);margin:22px 0}
-.toc a{display:block;padding:3px 0;color:var(--ink2);font-size:.94rem}
-.article h3{margin:24px 0 8px;font-size:1.18rem}
-.article figure{margin:26px 0}
-.article figure img{width:100%;height:auto;border-radius:12px;display:block;border:1px solid var(--line)}
-.article figcaption{font-size:.86rem;color:var(--muted);margin-top:8px;text-align:center}
-.article-hero{width:100%;height:auto;border-radius:12px;display:block;margin:18px 0 4px;border:1px solid var(--line)}
-.rel-links{border:1px solid var(--line);border-radius:12px;background:var(--bg2);padding:18px 20px;margin-top:28px}
-.rel-links b{display:block;margin-bottom:8px}
-.rel-links a{display:inline-block;margin:0 16px 6px 0;font-weight:600}
-/* cta band + footer */
-.cta-band{background:var(--navy);color:#fff;border-radius:18px;padding:44px 40px;text-align:center;box-shadow:0 24px 48px rgba(36,21,71,.25)}
-.cta-band h2{color:#fff}.cta-band p{color:#ddd5f5;margin:12px auto 22px;max-width:560px}
-footer.site{background:var(--navy);color:#ddd5f5;margin-top:0}
-footer.site .wrap{padding-top:48px;padding-bottom:28px}
-footer.site h4{color:#fff;font-size:.95rem;margin-bottom:12px}
-footer.site a{color:#ddd5f5;display:block;padding:3px 0;font-size:.92rem}
-footer.site p{color:#ddd5f5}
-footer.site .logo{color:#fff!important}
-.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}
-.foot-bottom{border-top:1px solid #453073;margin-top:32px;padding-top:18px;display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between;font-size:.85rem}
-/* views */
-.view{display:none}.view.active{display:block}
-.crumbs{font-size:.86rem;color:var(--muted);padding:22px 0 0}
-.crumbs a{color:var(--muted)}
-
-.checklist{list-style:none;padding:0;margin:0}
-.checklist li{padding:9px 0 9px 30px;position:relative;border-bottom:1px solid var(--line);color:var(--ink2)}
-.checklist li::before{content:"✓";position:absolute;left:2px;color:var(--accent);font-weight:800}
-table.spec{width:100%;border-collapse:collapse;font-size:.93rem}
-table.spec th,table.spec td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
-table.spec th{background:var(--bg2)}
-/* AEO — quick answers */
-.answer-box{border:1px solid var(--accent);background:var(--accent-soft);border-radius:var(--r);padding:20px 22px;margin:22px 0}
-.answer-box .ab-label{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:6px}
-.answer-box p{font-size:1.02rem;color:var(--ink)}
-.qa-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-.qa-card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px;transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease}
-.qa-card:hover{border-color:var(--accent);box-shadow:0 12px 28px rgba(36,21,71,.09);transform:translateY(-2px)}
-.qa-card h3{font-size:1.05rem;margin-bottom:8px}
-.qa-card p{color:var(--muted);font-size:.95rem}
-@media(max-width:640px){.qa-grid{grid-template-columns:1fr}}
-@media(max-width:960px){.g4{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(2,1fr)}.hero-grid{grid-template-columns:1fr}.foot-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:640px){nav.main,.nav-cta{display:none}.burger{display:block}.g2,.g3,.g4{grid-template-columns:1fr}section.block{padding:44px 0}.cta-band{padding:28px 20px}.kpis{grid-template-columns:1fr 1fr 1fr}.foot-grid{grid-template-columns:1fr}}
-</style>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/premium.css">
 <script>history.scrollRestoration='manual';window.addEventListener('load',function(){window.scrollTo(0,0);});</script>
 </head>
 <body>
@@ -294,7 +113,7 @@ table.spec th{background:var(--bg2)}
 <a class="logo" href="#/" aria-label="RankHarbor home"><img class="logo-img" src="assets/img/img-00da61719568.webp" alt="RankHarbor logo — white lighthouse with rising graph arrow on violet, with the full RankHarbor wordmark below"></a>
 <nav class="main" aria-label="Primary">
 <a href="#/" data-nav="home">Home</a>
-<span class="drop"><a href="#/services" data-nav="services">Services ▾</a>
+<span class="drop"><a href="#/services" data-nav="services">Services <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
 <span class="drop-menu" id="dropMenu"></span></span>
 <a href="#/services/saas-link-building" data-nav="linkbuilding">Link Building</a>
 <a href="#/case-studies" data-nav="cases">Case Studies</a>
@@ -302,8 +121,8 @@ table.spec th{background:var(--bg2)}
 <a href="#/about" data-nav="about">About</a>
 <a href="#/contact" data-nav="contact">Contact</a>
 </nav>
-<a class="btn nav-cta" href="#/audit">Get a Free SEO Audit</a>
-<button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+<a class="btn nav-cta" href="#/audit">Free SEO Audit</a>
+<button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></svg></button>
 </div>
 <div class="wrap mobile-menu" id="mobileMenu">
 <a href="#/">Home</a><a href="#/services">All Services</a>
@@ -328,12 +147,13 @@ table.spec th{background:var(--bg2)}
 <h1>Build Authority. Improve Rankings. Grow Organic Traffic.</h1>
 <p class="lead">Strategic SEO and link-building solutions for SaaS companies and growing businesses. From relevant backlink acquisition to technical SEO, we help you build a stronger foundation for organic growth.</p>
 <div class="cta-row"><a class="btn btn-hero primary" href="#/audit">Get a Free SEO Audit</a><a class="btn ghost btn-hero" href="#/services">View Services</a></div>
+<p class="small" style="margin-top:12px">Prefer to talk first? <a href="#/contact">Let's Talk &rarr;</a></p>
 <p class="hero-note">For SaaS founders, marketing managers, agencies and SMBs across the US, UK, Canada, Australia and other English-speaking markets. No ranking guarantees — just transparent, quality-focused work.</p>
 </div>
 <div class="dash" role="img" aria-label="Illustrative SEO dashboard showing keyword, backlink and crawl health panels">
 <div class="dash-head"><b>Campaign overview</b><span>Illustrative view</span></div>
 <div class="kpis"><div class="kpi"><span>Tracked keywords</span><b>Keyword set</b></div><div class="kpi"><span>Referring domains</span><b>Backlink profile</b></div><div class="kpi"><span>Crawl health</span><b>Technical checks</b></div></div>
-<svg viewBox="0 0 420 130" width="100%" height="110" aria-hidden="true"><polyline points="0,105 60,95 120,88 180,70 240,62 300,44 360,34 420,22" fill="none" stroke="#7c3aed" stroke-width="3"/><polyline points="0,115 60,110 120,106 180,98 240,92 300,84 360,76 420,68" fill="none" stroke="#b7a8e0" stroke-width="2" stroke-dasharray="5 4"/><circle cx="300" cy="44" r="4" fill="#7c3aed"/><circle cx="420" cy="22" r="4" fill="#7c3aed"/></svg>
+<svg viewBox="0 0 420 190" width="100%" height="170" aria-hidden="true"><defs><linearGradient id="hgBar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7457F5"/><stop offset="1" stop-color="#3985FF"/></linearGradient><linearGradient id="hgLine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7457F5"/><stop offset="1" stop-color="#3985FF"/></linearGradient></defs><g stroke="#E4E7F0" stroke-width="1"><line x1="0" y1="30" x2="420" y2="30"/><line x1="0" y1="70" x2="420" y2="70"/><line x1="0" y1="110" x2="420" y2="110"/><line x1="0" y1="150" x2="420" y2="150"/></g><g fill="url(#hgBar)"><rect x="28" y="118" width="34" height="42" rx="6"/><rect x="98" y="102" width="34" height="58" rx="6"/><rect x="168" y="88" width="34" height="72" rx="6"/><rect x="238" y="66" width="34" height="94" rx="6"/><rect x="308" y="48" width="34" height="112" rx="6"/></g><polyline points="45,112 115,96 185,82 255,58 325,38 392,20" fill="none" stroke="url(#hgLine)" stroke-width="3" stroke-linecap="round"/><g fill="#10152B"><circle cx="45" cy="112" r="4.5"/><circle cx="185" cy="82" r="4.5"/><circle cx="325" cy="38" r="4.5"/></g><g fill="#fff" stroke="#7457F5" stroke-width="2"><circle cx="115" cy="96" r="5"/><circle cx="255" cy="58" r="5"/><circle cx="392" cy="20" r="5"/></g><path d="M384 12 L400 18 L386 30 Z" fill="#10152B"/></svg>
 <div class="linklist">
 <div><span>Relevant guest post — SaaS publication</span><span class="tag">Editorial review</span></div>
 <div><span>Contextual link insertion — existing article</span><span class="tag">Relevance check</span></div>
@@ -344,10 +164,11 @@ table.spec th{background:var(--bg2)}
 </div></div>
 
 <div class="trust-strip" role="note" aria-label="RankHarbor at a glance"><div class="wrap">
-<span class="trust-item"><span class="t-ic" aria-hidden="true">✓</span>Founded by Faiz Baig</span>
-<span class="trust-item"><span class="t-ic" aria-hidden="true">✓</span>Free SEO Audit</span>
-<span class="trust-item"><span class="t-ic" aria-hidden="true">✓</span>No ranking guarantees</span>
-<span class="trust-item"><span class="t-ic" aria-hidden="true">✓</span>Based in Faisalabad, Pakistan</span>
+<span class="trust-item"><span class="t-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span>Free SEO Audit offered</span>
+<span class="trust-item"><span class="t-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span>8 SEO services</span>
+<span class="trust-item"><span class="t-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span>Founder-led by Faiz Baig — Faisalabad, Pakistan</span>
+<span class="trust-item"><span class="t-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span><a href="mailto:rankharbor67@gmail.com">rankharbor67@gmail.com</a></span>
+<span class="trust-item"><span class="t-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span>WhatsApp <a href="https://wa.me/923207321850" target="_blank" rel="noopener">03207321850</a></span>
 </div></div>
 
 <section class="block alt"><div class="wrap">
@@ -371,36 +192,49 @@ table.spec th{background:var(--bg2)}
 <section class="block"><div class="wrap">
 <div class="sec-head"><span class="label">How we work</span><h2>Principles behind every campaign</h2><p>We would rather place fewer, better links and fix real technical problems than chase volume. These principles shape every engagement.</p></div>
 <div class="grid g3">
-<div class="card"><div class="icon">◎</div><h3>Relevant link placements</h3><p>Links are placed on websites and pages that are topically relevant to your business — not random directories or unrelated blogs.</p></div>
-<div class="card"><div class="icon">☰</div><h3>Transparent communication</h3><p>You see target pages, publisher candidates and live URLs before and during the campaign. No hidden placements, no vague summaries.</p></div>
-<div class="card"><div class="icon">✦</div><h3>Customized strategies</h3><p>Every campaign starts from your market, competitors and current profile. There is no one-size-fits-all package applied blindly.</p></div>
-<div class="card"><div class="icon">✉</div><h3>Quality-focused outreach</h3><p>Real publisher outreach and editorial conversations — not automated spam, link farms or private blog networks.</p></div>
-<div class="card"><div class="icon">▣</div><h3>Clear deliverables</h3><p>Agreed deliverables, timelines and reporting formats are defined up front, so you always know what you are paying for.</p></div>
-<div class="card"><div class="icon">∞</div><h3>Long-term partnership</h3><p>SEO compounds over time. We plan in quarters, not weeks, and advise honestly when something is not worth doing.</p></div>
+<div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div><h3>Relevant link placements</h3><p>Links are placed on websites and pages that are topically relevant to your business — not random directories or unrelated blogs.</p></div>
+<div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><h3>Transparent communication</h3><p>You see target pages, publisher candidates and live URLs before and during the campaign. No hidden placements, no vague summaries.</p></div>
+<div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div><h3>Customized strategies</h3><p>Every campaign starts from your market, competitors and current profile. There is no one-size-fits-all package applied blindly.</p></div>
+<div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></div><h3>Quality-focused outreach</h3><p>Real publisher outreach and editorial conversations — not automated spam, link farms or private blog networks.</p></div>
+<div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h3>Clear deliverables</h3><p>Agreed deliverables, timelines and reporting formats are defined up front, so you always know what you are paying for.</p></div>
+<div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Long-term partnership</h3><p>SEO compounds over time. We plan in quarters, not weeks, and advise honestly when something is not worth doing.</p></div>
 </div></div></section>
 
 <section class="block alt"><div class="wrap">
 <div class="sec-head"><span class="label">Services</span><h2>SEO services that work together</h2><p>Eight focused services — use one on its own, or combine them into a monthly campaign.</p></div>
 <div class="grid g4" id="homeServices"></div>
 <p style="margin-top:20px"><a class="btn ghost" href="#/services">View all services →</a></p>
+<div class="cta-row" style="margin-top:20px"><a class="btn" href="#/contact">Let's Talk</a><a class="btn ghost" href="#/audit">Get a Free SEO Audit</a></div>
 </div></section>
 
 <section class="block"><div class="wrap">
-<div class="sec-head"><span class="label">Process</span><h2>How it works</h2><p>Getting started is simple and low-risk: begin with a free audit, see the full picture before you commit, then grow month by month with clear reporting at every step.</p></div>
-<div class="grid g4">
+<div class="sec-head"><span class="label">Launch your project</span><h2>Launch your project in four steps</h2><p>Getting started is simple and low-risk: begin with a free audit, see the full picture before you commit, then grow month by month with clear reporting at every step.</p></div>
+<div class="grid g4 process-steps">
 <div class="card"><div class="step-num">1</div><h3>Free SEO Audit</h3><p>Start free. We review your website manually — technical issues, on-page opportunities and your backlink profile — and learn your goals, market and target pages.</p><a class="step-cta" href="#/audit">Request your free audit →</a></div>
 <div class="card"><div class="step-num">2</div><h3>Full SEO Audit — <span class="step-price">PKR 15,000</span></h3><p>Want the complete picture? The full audit adds keyword and competitor research and ends with a prioritized action plan — a concrete strategy with priorities and timelines.</p><a class="step-cta" href="#/contact">Order the Full Audit →</a></div>
 <div class="card"><div class="step-num">3</div><h3>Monthly SEO plan</h3><p>Choose a monthly plan that fits your market and budget. Technical fixes, content work and link building are carried out each month and checked against agreed quality standards.</p><a class="step-cta" href="#pricing">See monthly plans →</a></div>
 <div class="card"><div class="step-num">4</div><h3>Grow organic traffic month by month</h3><p>SEO compounds over time. You receive clear reports on work completed and next steps, and the strategy is refined each cycle as your organic traffic grows month by month.</p><a class="step-cta" href="#/services/monthly-seo">How monthly SEO runs →</a></div>
 </div></div></section>
 
+<section class="block alt" id="expect"><div class="wrap">
+<div class="sec-head"><span class="label">What you can expect</span><h2>What you can expect from RankHarbor</h2><p>Nothing here is new — every point below is already stated elsewhere on this site. This is simply what working with us looks like, in one place.</p></div>
+<div class="qa-grid">
+<div class="qa-card"><h3>A free audit first</h3><p>Start with a free preliminary audit of your own site, reviewed manually before you pay anything — so you only buy the work you actually need.</p></div>
+<div class="qa-card"><h3>A manual review, before you pay</h3><p>Our agency reviews your site manually and replies with prioritized findings — it is a preliminary review, not an automated instant scan.</p></div>
+<div class="qa-card"><h3>Deliverables and timelines, agreed up front</h3><p>Agreed deliverables, timelines and reporting formats are defined up front, so you always know what you are paying for.</p></div>
+<div class="qa-card"><h3>Monthly reporting in plain language</h3><p>Every month you see the work completed, the live URLs earned and the next steps — in plain language, including when a month is slower than hoped.</p></div>
+<div class="qa-card"><h3>No ranking guarantees</h3><p>RankHarbor does not guarantee specific rankings, traffic or revenue, because search results are controlled by Google and no agency can promise them honestly.</p></div>
+</div>
+<div class="cta-row" style="margin-top:24px"><a class="btn" href="#/audit">Get a Free SEO Audit</a><a class="btn ghost" href="#/contact">Let's Talk</a></div>
+</div></section>
+
 <section class="block why-sec"><div class="wrap">
 <div class="sec-head"><span class="label">Why RankHarbor</span><h2>Why RankHarbor</h2><p>Plenty of agencies promise the top of Google. We would rather earn your trust with honest work, published prices and reporting you can check — here is what makes RankHarbor different.</p></div>
 <div class="grid g4">
-<div class="card"><div class="icon">▤</div><h3>Honest reporting</h3><p>Every month you see the work completed, the live URLs earned and the next steps — in plain language, including when a month is slower than hoped.</p></div>
-<div class="card"><div class="icon">◎</div><h3>No ranking guarantees</h3><p>Google controls its results, so we never promise specific rankings, traffic or revenue. We commit to the work itself: relevant placements and clear deliverables.</p></div>
-<div class="card"><div class="icon">✓</div><h3>Free audit first</h3><p>Start with a free preliminary audit of your own site, reviewed manually before you pay anything — so you only buy the work you actually need.</p></div>
-<div class="card"><div class="icon">✦</div><h3>Founder-led work by Faiz Baig</h3><p>RankHarbor is founder-led: Faiz Baig is your main point of contact and personally oversees your campaign — no hand-offs to anonymous account managers.</p></div>
+<div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/></svg></div><h3>Honest reporting</h3><p>Every month you see the work completed, the live URLs earned and the next steps — in plain language, including when a month is slower than hoped.</p></div>
+<div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>No ranking guarantees</h3><p>Google controls its results, so we never promise specific rankings, traffic or revenue. We commit to the work itself: relevant placements and clear deliverables.</p></div>
+<div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div><h3>Free audit first</h3><p>Start with a free preliminary audit of your own site, reviewed manually before you pay anything — so you only buy the work you actually need.</p></div>
+<div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><h3>Founder-led work by Faiz Baig</h3><p>RankHarbor is founder-led: Faiz Baig is your main point of contact and personally oversees your campaign — no hand-offs to anonymous account managers.</p></div>
 </div></div></section>
 
 <section class="block alt"><div class="wrap"><div class="grid g2" style="align-items:start">
@@ -414,20 +248,40 @@ table.spec th{background:var(--bg2)}
 <ul style="margin:0"><li>Topical relevance to your niche and target page</li><li>Real editorial standards and genuine readership</li><li>Natural link profile and anchor-text balance</li><li>Indexation status of the linking page</li><li>Transparent publisher pricing — no hidden markups on quality</li><li>Availability confirmed before it is proposed to you</li></ul></div>
 </div></div></section>
 
-<section class="block"><div class="wrap">
-<div class="sec-head"><span class="label">Case studies</span><h2>Real results — coming soon</h2><p>RankHarbor is a new agency, so this space is intentionally honest: we have no client results to show yet, and we will not invent any. Our first case studies will be published here as real campaigns complete — only with verified data and the client&rsquo;s permission.</p></div>
+
+
+<section class="block" id="results"><div class="wrap">
+<div class="sec-head"><span class="label">Real results</span><h2>Our own outreach, in real numbers</h2><p>These are the results of RankHarbor's own cold-email outreach, published as an original study. No traffic, ranking or revenue figures — just what actually happened, counted from our own sent folder.</p></div>
+<div class="stat-grid">
+<div class="card stat-card"><span class="stat-num">594</span><h3>Cold emails sent</h3><p>Sent between 4–13 Nov 2026</p></div>
+<div class="card stat-card"><span class="stat-num">14</span><h3>Replies</h3><p>2.4% of emails sent</p></div>
+<div class="card stat-card"><span class="stat-num">9</span><h3>Bounces</h3><p>1.5% of emails sent</p></div>
+<div class="card stat-card"><span class="stat-num">1</span><h3>Real client</h3><p>A real prospective client</p></div>
+<div class="card stat-card"><span class="stat-num">1</span><h3>Free editorial</h3><p>A free editorial acceptance</p></div>
+<div class="card stat-card"><span class="stat-num">1</span><h3>Collaboration</h3><p>A collaboration request</p></div>
+<div class="card stat-card"><span class="stat-num">11</span><h3>Paid offers</h3><p>$25–$350, median $95</p></div>
+</div>
+<p style="margin-top:20px"><a class="btn ghost" href="cold-email-outreach-study-2026.html">Read the full study →</a></p>
+</div></section>
+
+<section class="block alt"><div class="wrap">
+<div class="sec-head"><span class="label">Case studies</span><h2>One case study, fully documented</h2><p>Our work speaks for itself. RankHarbor has one published case study so far — our own cold-email outreach study. It is documented with the real numbers and the real replies behind them, and nothing is added or rounded up.</p></div>
 <div class="card">
-<span class="tag">First case studies in progress</span>
-<h3 style="margin:12px 0 8px">What every published case study will show</h3>
+<span class="tag">Case study</span>
+<h3 style="margin:12px 0 8px">We Sent 594 Cold Emails for SEO Clients — Here's What Actually Happened</h3>
+<p style="color:var(--muted)">Between 4 and 13 November 2026, we sent 594 cold emails to businesses that might need SEO, and published everything that came back — replies, bounces, paid offers and the one real client.</p>
+<div class="cta-row"><a class="btn" href="cold-email-outreach-study-2026.html">Read the case study →</a></div>
+</div>
+<div class="card" style="margin-top:20px">
+<h3 style="margin-bottom:8px">What every RankHarbor case study will show</h3>
 <div class="grid g2" style="gap:10px">
-<p><b>Initial challenge:</b> the client&rsquo;s starting position, with baseline figures and dates.</p>
+<p><b>Initial challenge:</b> the client's starting position, with baseline figures and dates.</p>
 <p><b>Strategy:</b> the approach agreed with the client before work began.</p>
 <p><b>Work completed:</b> the actual deliverables and placements, listed in full.</p>
 <p><b>Campaign duration:</b> the real start and end dates of the work.</p>
 <p><b>Verified results:</b> measured outcomes with their source (for example, a dated Google Search Console export).</p>
 <p><b>Key lessons:</b> what worked, what did not, and what we would do differently.</p>
 </div></div>
-<p style="margin-top:16px"><a class="btn ghost" href="#/case-studies">Go to Case Studies →</a></p>
 </div></section>
 
 <section class="block alt" id="pricing"><div class="wrap">
@@ -443,21 +297,22 @@ table.spec th{background:var(--bg2)}
 <div class="price-group">
 <div class="group-head"><h3>Monthly SEO packages — Pakistan</h3><p>For businesses targeting customers in Pakistan. Prices in PKR, billed monthly.</p></div>
 <div class="grid g3">
-<div class="card price-card"><h3>Starter</h3><p class="small">For small businesses building a foundation</p><p class="price">PKR 25,000 <small>/month</small></p><p class="small">per month</p><ul><li>Technical &amp; on-page SEO review</li><li>Foundational keyword research</li><li>Starter link-building allocation</li><li>Monthly progress report</li></ul><a class="btn ghost more" href="#/contact">Choose Starter</a></div>
-<div class="card price-card featured"><span class="badge">RECOMMENDED</span><h3>Growth</h3><p class="small">For growing companies investing in organic growth</p><p class="price">PKR 50,000 <small>/month</small></p><p class="small">per month</p><ul><li>Everything in Starter</li><li>Ongoing guest posting &amp; insertions</li><li>Competitor backlink analysis</li><li>Content strategy &amp; monthly consultation</li></ul><a class="btn more" href="#/contact">Choose Growth</a></div>
-<div class="card price-card"><h3>Premium</h3><p class="small">For established businesses and larger campaigns</p><p class="price">PKR 100,000 <small>/month</small></p><p class="small">per month</p><ul><li>Everything in Growth</li><li>Larger link-building &amp; content allocation</li><li>Advanced technical SEO support</li><li>Priority reporting &amp; support</li></ul><a class="btn ghost more" href="#/contact">Choose Premium</a></div>
+<div class="card price-card"><h3>Starter</h3><p class="stage-label">For new and small websites</p><p class="small">For small businesses building a foundation</p><p class="price">PKR 25,000 <small>/month</small></p><p class="small">per month</p><ul><li>Technical &amp; on-page SEO review</li><li>Foundational keyword research</li><li>Starter link-building allocation</li><li>Monthly progress report</li></ul><a class="btn ghost more" href="#/contact">Choose Starter</a></div>
+<div class="card price-card featured"><span class="badge">RECOMMENDED</span><h3>Growth</h3><p class="stage-label">For growing businesses</p><p class="small">For growing companies investing in organic growth</p><p class="price">PKR 50,000 <small>/month</small></p><p class="small">per month</p><ul><li>Everything in Starter</li><li>Ongoing guest posting &amp; insertions</li><li>Competitor backlink analysis</li><li>Content strategy &amp; monthly consultation</li></ul><a class="btn more" href="#/contact">Choose Growth</a></div>
+<div class="card price-card"><h3>Premium</h3><p class="stage-label">For established sites scaling up</p><p class="small">For established businesses and larger campaigns</p><p class="price">PKR 100,000 <small>/month</small></p><p class="small">per month</p><ul><li>Everything in Growth</li><li>Larger link-building &amp; content allocation</li><li>Advanced technical SEO support</li><li>Priority reporting &amp; support</li></ul><a class="btn ghost more" href="#/contact">Choose Premium</a></div>
 </div></div>
 
 <div class="price-group">
 <div class="group-head"><h3>Monthly SEO packages — International</h3><p>For clients outside Pakistan targeting the US, UK, Canada, Australia and other markets. Prices in USD, billed monthly.</p></div>
 <div class="grid g4">
-<div class="card price-card"><h3>Starter</h3><p class="small">For small businesses building a foundation</p><p class="price">$150 <small>/month</small></p><p class="small">per month</p><ul><li>Technical &amp; on-page SEO review</li><li>Foundational keyword research</li><li>Starter link-building allocation</li><li>Monthly progress report</li></ul><a class="btn ghost more" href="#/contact">Choose Starter</a></div>
-<div class="card price-card featured"><span class="badge">RECOMMENDED</span><h3>Growth</h3><p class="small">For growing companies investing in organic growth</p><p class="price">$300 <small>/month</small></p><p class="small">per month</p><ul><li>Everything in Starter</li><li>Ongoing guest posting &amp; insertions</li><li>Competitor backlink analysis</li><li>Content strategy &amp; monthly consultation</li></ul><a class="btn more" href="#/contact">Choose Growth</a></div>
-<div class="card price-card"><h3>Premium</h3><p class="small">For established businesses and larger campaigns</p><p class="price">$600 <small>/month</small></p><p class="small">per month</p><ul><li>Everything in Growth</li><li>Larger link-building &amp; content allocation</li><li>Advanced technical SEO support</li><li>Priority reporting &amp; support</li></ul><a class="btn ghost more" href="#/contact">Choose Premium</a></div>
+<div class="card price-card"><h3>Starter</h3><p class="stage-label">For new and small websites</p><p class="small">For small businesses building a foundation</p><p class="price">$150 <small>/month</small></p><p class="small">per month</p><ul><li>Technical &amp; on-page SEO review</li><li>Foundational keyword research</li><li>Starter link-building allocation</li><li>Monthly progress report</li></ul><a class="btn ghost more" href="#/contact">Choose Starter</a></div>
+<div class="card price-card featured"><span class="badge">RECOMMENDED</span><h3>Growth</h3><p class="stage-label">For growing businesses</p><p class="small">For growing companies investing in organic growth</p><p class="price">$300 <small>/month</small></p><p class="small">per month</p><ul><li>Everything in Starter</li><li>Ongoing guest posting &amp; insertions</li><li>Competitor backlink analysis</li><li>Content strategy &amp; monthly consultation</li></ul><a class="btn more" href="#/contact">Choose Growth</a></div>
+<div class="card price-card"><h3>Premium</h3><p class="stage-label">For established sites scaling up</p><p class="small">For established businesses and larger campaigns</p><p class="price">$600 <small>/month</small></p><p class="small">per month</p><ul><li>Everything in Growth</li><li>Larger link-building &amp; content allocation</li><li>Advanced technical SEO support</li><li>Priority reporting &amp; support</li></ul><a class="btn ghost more" href="#/contact">Choose Premium</a></div>
 <div class="card price-card"><h3>Guest Post / Link</h3><p class="small">A single guest post or link placement, ordered on its own</p><p class="price">$100 <small>per link</small></p><p class="small">one-time, per placement</p><ul><li>Relevant, editorially reviewed publisher</li><li>Original content written to brief</li><li>Natural, in-content link placement</li><li>Live URL, anchor &amp; target-page reporting</li></ul><a class="btn ghost more" href="#/contact">Order a Link</a></div>
 </div></div>
 
 <p class="pricing-note">The rates above are our standard prices; the exact scope of your package is confirmed in writing before work begins. We do not guarantee specific rankings, traffic volumes or revenue — no honest SEO agency can. What we do commit to is the work itself: relevant placements, clear deliverables and transparent monthly reporting.</p>
+<div class="cta-row" style="justify-content:center;margin-top:28px"><a class="btn" href="#/contact">Get a Quote</a><a class="btn ghost" href="#/audit">Get a Free SEO Audit</a></div>
 </div></section>
 
 <section class="block"><div class="wrap"><div class="grid g2" style="align-items:start">
@@ -469,13 +324,7 @@ table.spec th{background:var(--bg2)}
 <div class="card"><h3 style="margin-bottom:14px">Request your free audit</h3><div data-audit-form></div></div>
 </div></div></section>
 
-<section class="block alt"><div class="wrap">
-<div class="sec-head"><span class="label">Testimonials</span><h2>Client testimonials — coming soon</h2><p>RankHarbor is newly launched and has not collected client testimonials yet. Rather than publish invented quotes, this section will feature real reviews from our first clients — with their names and written permission — as soon as they are available.</p></div>
-<div class="card" style="max-width:720px">
-<h3 style="margin-bottom:8px">Work with us and judge us on the work itself</h3>
-<p style="color:var(--muted)">Until testimonials exist, judge RankHarbor on what you can verify right now: published prices with no hidden extras, clear deliverables for every service, free guides that show how we work as an agency, and a free preliminary audit of your own site — reviewed manually by our agency, before you pay anything.</p>
-<div class="cta-row"><a class="btn ghost" href="#/audit">Request a Free Audit</a><a class="btn ghost" href="#/case-studies">See How We Report Results</a></div>
-</div></div></section>
+
 
 <section class="block"><div class="wrap">
 <div class="sec-head"><span class="label">From the blog</span><h2>SEO guides &amp; resources</h2><p>Practical, original guides on link building, technical SEO and SaaS growth.</p></div>
@@ -491,7 +340,18 @@ table.spec th{background:var(--bg2)}
 <section class="block"><div class="wrap"><div class="cta-band">
 <h2>Ready to Build a Stronger Organic Growth Strategy?</h2>
 <p>Tell us about your website and goals. We will reply with an honest assessment and clear next steps — no obligation, no ranking promises.</p>
-<div class="cta-row" style="justify-content:center"><a class="btn light" href="#/audit">Get a Free SEO Audit</a><a class="btn ghost" style="color:#fff!important;border-color:#a78bfa" href="#/contact">Discuss Your Project</a></div>
+<div class="cta-row" style="justify-content:center"><a class="btn light" href="#/audit">Get a Free SEO Audit</a><a class="btn ghost" style="color:#fff!important;border-color:#a78bfa" href="#/contact">Let's Talk</a><a class="btn ghost" style="color:#fff!important;border-color:#a78bfa" href="#/contact">Get a Quote</a></div>
+</div></div></section>
+<section class="block alt"><div class="wrap"><div class="news-block">
+<div><span class="label">Newsletter</span><h2 style="margin:10px 0 8px">SEO tips by email</h2>
+<p style="color:var(--muted)">Occasional, practical SEO and link-building tips from RankHarbor — the same kind of guidance published in our blog guides.</p></div>
+<div class="card"><h3 style="margin-bottom:14px">Subscribe to SEO tips</h3>
+<form id="newsForm" novalidate>
+<div class="field"><label for="nEmail">Your email *</label><input id="nEmail" name="email" type="email" autocomplete="email" placeholder="you@yourbusiness.com"><p class="err">Please enter a valid email address.</p></div>
+<div class="notice" id="newsNote" style="display:none"></div>
+<button class="btn" type="submit" style="margin-top:14px">Subscribe</button>
+<p class="small" style="margin-top:10px">No signup service is connected yet. Submitting validates your email and prepares a pre-filled email in your mail app, addressed to rankharbor67@gmail.com — nothing is stored on this site.</p>
+</form></div>
 </div></div></section>
 </section>
 <!-- ============ SERVICES INDEX ============ -->
@@ -514,7 +374,11 @@ table.spec th{background:var(--bg2)}
 <section class="view" data-view="cases">
 <div class="wrap"><p class="crumbs"><a href="#/">Home</a> / Case Studies</p>
 <section class="block" style="padding-top:26px">
-<div class="sec-head"><span class="label">Case studies</span><h2 style="font-size:2.2rem;margin:8px 0 10px">Case studies — coming soon</h2><p>RankHarbor is a new agency and our first client campaigns are where our case studies will come from. We publish a study only when the data is verified and the client has agreed to share it — no sample numbers, no borrowed results, no invented growth charts.</p></div>
+<div class="sec-head"><span class="label">Case studies</span><h2 style="font-size:2.2rem;margin:8px 0 10px">Case Studies</h2><p>RankHarbor is a new agency and our first client campaigns are where our case studies will come from. We publish a study only when the data is verified and the client has agreed to share it — no sample numbers, no borrowed results, no invented growth charts.</p></div>
+<div class="card" style="margin-bottom:18px"><span class="tag">Case study</span>
+<h3 style="margin:12px 0 8px">We Sent 594 Cold Emails for SEO Clients — Here's What Actually Happened</h3>
+<p style="color:var(--muted)">Our one published case study: 594 cold emails sent between 4 and 13 November 2026 — 14 replies, 9 bounces, 1 real client, 1 free editorial, 1 collaboration and 11 paid offers. Read the full study for the method and every number behind it.</p>
+<div class="cta-row"><a class="btn" href="cold-email-outreach-study-2026.html">Read the case study →</a></div></div>
 <div class="card" style="margin-bottom:18px"><span class="tag">How we will report</span>
 <h3 style="margin:12px 0 10px">What every RankHarbor case study will include</h3>
 <table class="spec"><tr><th style="width:200px">Initial challenge</th><td>The client&rsquo;s starting position, constraints and baseline figures — with the dates they were measured.</td></tr>
@@ -692,7 +556,7 @@ table.spec th{background:var(--bg2)}
 <div><h4>Services</h4>
 <a href="#/services/saas-link-building">SaaS Link Building</a><a href="#/services/guest-posting">Guest Posting</a><a href="#/services/link-insertions">Link Insertions</a><a href="#/services/technical-seo">Technical SEO</a><a href="#/services/on-page-seo">On-Page SEO</a><a href="#/services/keyword-research">Keyword Research</a><a href="#/services/monthly-seo">Monthly SEO</a></div>
 <div><h4>Resources</h4>
-<a href="#/blog">Blog</a><a href="#/case-studies">Case Studies</a><a href="#/audit">Free SEO Audit</a><a href="#/about">About</a><a href="#/launch-guide">Getting Started Guide</a><a href="#/privacy">Privacy Policy</a><a href="#/terms">Terms of Service</a></div>
+<a href="#/blog">Blog</a><a href="#pricing">Pricing</a><a href="#/case-studies">Case Studies</a><a href="#/audit">Free SEO Audit</a><a href="#/about">About</a><a href="#/launch-guide">Getting Started Guide</a><a href="#/privacy">Privacy Policy</a><a href="#/terms">Terms of Service</a></div>
 <div><h4>Contact</h4>
 <p style="font-size:.92rem;margin-bottom:6px">Founder &amp; Contact: Faiz Baig</p>
 <a href="mailto:rankharbor67@gmail.com">rankharbor67@gmail.com</a>
@@ -746,15 +610,24 @@ deliverables:["Competitor backlink gap report","Prioritized target-site list","L
 deliverables:["Initial SEO assessment & roadmap","Monthly work-completed report","Monthly consultation call","Rolling priority backlog"],faqs:[["Is there a minimum term?","SEO needs time; we recommend judging a campaign over at least a quarter. Exact terms are set in your proposal."],["Can agencies white-label monthly SEO?","Yes — reseller and white-label arrangements are available on request."],["How is pricing set?","Pakistan packages: Starter PKR 25,000/month, Growth PKR 50,000/month, Premium PKR 100,000/month. International packages: Starter $150/month, Growth $300/month, Premium $600/month. The exact scope — site size, content volume and link-building allocation — is confirmed in your proposal before work begins."]]}
 ];
 var FAQS=[
-["What is SEO link building?","Link building is the process of earning hyperlinks from other websites to yours. Search engines treat links from relevant, trusted sites as endorsements, which help your pages rank. Good link building is editorial and relevance-led — not buying links at scale."],
-["What is SaaS link building?","SaaS link building earns backlinks specifically for software companies — from SaaS blogs, B2B publications, review sites and communities — targeting product, feature and content pages that drive trials and demos."],
-["What is the difference between guest posting and link insertion?","A guest post publishes a brand-new article on another site containing your link. A link insertion adds your link contextually into an article that already exists on the host site. Both can work; the right choice depends on the page, topic and goal."],
-["How do you evaluate publisher websites?","We check topical relevance, genuine audience and traffic signals, editorial standards, outbound link patterns, indexation of the linking page and pricing fairness. Sites that fail these checks are not proposed."],
-["How long does SEO take to show results?","It varies by market, starting position and scope. Meaningful movement commonly takes several months of consistent work; anyone promising instant rankings is not being honest with you."],
-["Do you offer custom campaigns?","Yes. Most of our work is customized — publisher requirements, target pages, volumes and reporting are all scoped per client. Use the contact form to request a custom quote."],
-["Do you work with agencies and resellers?","Yes. We offer white-label link building and SEO support for agencies and resellers with reporting formatted for your clients."],
-["How can I request an SEO audit?","Use the Free SEO Audit form on this site. Our agency reviews your site manually and replies with prioritized findings — it is a preliminary review, not an automated instant scan."],
-["Are rankings guaranteed?","No — and they cannot be, by anyone. Google controls its results. What we commit to instead is our process: relevant placements, transparent reporting and clear deliverables."]];
+["What is SEO?", "SEO (search engine optimization) is the practice of improving a website so it appears higher in unpaid search results on Google and other search engines. It combines technical fixes, helpful content matched to search intent, and backlinks from relevant websites. SEO does not involve paying for ad clicks, and results build gradually over time."],
+["What is answer engine optimization (AEO)?", "AEO is the practice of structuring content so AI answer engines — such as Google AI Overviews, ChatGPT, Gemini and Perplexity — can quote it directly as the answer to a question. It uses short, direct answers under question-style headings, clear definitions, and FAQ schema. AEO works alongside SEO, not instead of it."],
+["How much does SEO cost in Pakistan?", "At RankHarbor, a Free preliminary audit costs nothing, a Full SEO Audit is PKR 15,000 one-time, and monthly packages for Pakistan are PKR 25,000 (Starter), PKR 50,000 (Growth) and PKR 100,000 (Premium) per month. International monthly packages are $150, $300 and $600 per month, and a single guest post or link is $100. The exact scope of a package is confirmed in writing before work begins."],
+["How long does SEO take?", "SEO usually takes several months of consistent work before meaningful ranking movement appears. The timeline depends on how competitive your market is, your site's starting position and the scope of work. Anyone promising instant or guaranteed rankings is not being honest — Google controls its results, not any agency."],
+["What does an SEO agency do?", "An SEO agency audits your website, researches the keywords your customers search, fixes technical and on-page issues, creates or improves content, and earns relevant backlinks from other websites. It then reports the work completed and the results each month. RankHarbor does this for SaaS companies and growing businesses in Pakistan and internationally."],
+["Does RankHarbor guarantee #1 rankings?", "No. RankHarbor does not guarantee specific rankings, traffic or revenue, because search results are controlled by Google and no agency can promise them honestly. What we commit to is the work itself: relevant placements, clear deliverables, published prices and transparent monthly reporting."],
+["What is SEO link building?", "Link building is the process of earning hyperlinks from other websites to yours. Search engines treat links from relevant, trusted sites as endorsements, which help your pages rank. Good link building is editorial and relevance-led — not buying links at scale."],
+["What is SaaS link building?", "SaaS link building earns backlinks specifically for software companies — from SaaS blogs, B2B publications, review sites and communities — targeting product, feature and content pages that drive trials and demos."],
+["What is the difference between guest posting and link insertion?", "A guest post publishes a brand-new article on another site containing your link. A link insertion adds your link contextually into an article that already exists on the host site. Both can work; the right choice depends on the page, topic and goal."],
+["How do you evaluate publisher websites?", "We check topical relevance, genuine audience and traffic signals, editorial standards, outbound link patterns, indexation of the linking page and pricing fairness. Sites that fail these checks are not proposed."],
+["Do you offer custom campaigns?", "Yes. Most of our work is customized — publisher requirements, target pages, volumes and reporting are all scoped per client. Use the contact form to request a custom quote."],
+["Do you work with agencies and resellers?", "Yes. We offer white-label link building and SEO support for agencies and resellers with reporting formatted for your clients."],
+["How can I request an SEO audit?", "Use the Free SEO Audit form on this site. Our agency reviews your site manually and replies with prioritized findings — it is a preliminary review, not an automated instant scan."],
+["What SEO services does RankHarbor offer?", "RankHarbor offers eight services: SaaS link building, guest posting, link insertions, technical SEO, on-page SEO, keyword research, competitor backlink analysis and monthly SEO campaigns. Each can be used on its own or combined into a monthly campaign."],
+["How much do RankHarbor’s SEO services cost?", "A Free preliminary audit costs nothing and a Full SEO Audit is PKR 15,000 one-time. Monthly packages are PKR 25,000, PKR 50,000 and PKR 100,000 for Pakistan, and $150, $300 and $600 internationally. A single guest post or link is $100. Full pricing is published on the homepage."],
+["Which SEO service do I need first?", "If you are unsure, start with the free preliminary SEO audit. It shows whether your priority is technical fixes, on-page improvements, content or backlinks, so you only pay for the service you actually need."],
+["Does RankHarbor guarantee rankings?", "No. Rankings are controlled by Google, and no agency can guarantee them honestly. We commit to relevant placements, clear deliverables, published prices and transparent monthly reporting instead."]
+];
 
 var ARTICLES=[
 {slug:"what-is-saas-link-building",cat:"SaaS SEO",color:"#0e4d3a",title:"What Is SaaS Link Building? A Practical Guide for Software Companies",date:"2026-10-12",mins:7,excerpt:"SaaS link building earns backlinks from software, B2B and industry publications to strengthen product and content pages. Here is how it works and what makes a SaaS link valuable.",body:[
@@ -832,9 +705,19 @@ var CATS=["All","SEO Basics","Link Building","SaaS SEO","Technical SEO","On-Page
 
 /* ================= HELPERS ================= */
 function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;");}
-function svcCard(s){return '<article class="card"><div class="icon">'+s.icon+'</div><h3>'+s.title+'</h3><p style="color:var(--muted);font-size:.94rem;margin-top:6px">'+s.short+'</p><ul>'+s.benefits.map(function(b){return "<li>"+b+"</li>";}).join("")+'</ul><a class="more" href="#/services/'+s.slug+'">Learn more →</a><br><a class="more" href="#/audit" style="color:var(--ink2)">Get a free audit</a></article>';}
+var SVC_ICONS={
+"saas-link-building":'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>',
+"guest-posting":'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>',
+"link-insertions":'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3 4 7l4 4"/><path d="M4 7h16"/><path d="m16 21 4-4-4-4"/><path d="M20 17H4"/></svg>',
+"technical-seo":'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>',
+"on-page-seo":'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>',
+"keyword-research":'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>',
+"competitor-analysis":'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>',
+"monthly-seo":'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg>'
+};
+function svcCard(s){return '<article class="card"><div class="icon">'+(SVC_ICONS[s.slug]||s.icon)+'</div><h3>'+s.title+'</h3><p style="color:var(--muted);font-size:.94rem;margin-top:6px">'+s.short+'</p><ul>'+s.benefits.map(function(b){return "<li>"+b+"</li>";}).join("")+'</ul><a class="more" href="#/services/'+s.slug+'">Learn more →</a><br><a class="more" href="#/audit" style="color:var(--ink2)">Get a free audit</a></article>';}
 function faqHTML(list){return list.map(function(f){return '<details class="faq"><summary>'+f[0]+'</summary><div class="faq-body">'+f[1]+'</div></details>';}).join("");}
-function blogCard(a){var thumb=a.hero?'<div class="blog-thumb" style="background:'+a.color+' url(\''+a.hero+'\') center/cover no-repeat"><span>'+esc(a.cat.toUpperCase())+'</span></div>':'<div class="blog-thumb" style="background:'+a.color+'"><span>'+esc(a.cat.toUpperCase())+'</span></div>';return '<article class="card">'+thumb+'<div class="meta"><span>'+a.date+'</span><span>·</span><span>'+a.mins+' min read</span><span>·</span><span>'+a.cat+'</span></div><h3>'+a.title+'</h3><p style="color:var(--muted);font-size:.94rem;margin-top:6px">'+a.excerpt+'</p><a class="more" href="#/blog/'+a.slug+'">Read more →</a></article>';}
+function blogCard(a){var thumb=a.hero?'<div class="blog-thumb" style="background:'+a.color+' url(\''+a.hero+'\') center/cover no-repeat"><span>'+esc(a.cat.toUpperCase())+'</span></div>':'<div class="blog-thumb blog-grad" style="background:linear-gradient(135deg,#10152B 0%,#7457F5 58%,#3985FF 100%)"><span>'+esc(a.cat.toUpperCase())+'</span></div>';return '<article class="card">'+thumb+'<div class="meta"><span>'+a.date+'</span><span>·</span><span>'+a.mins+' min read</span><span>·</span><span>'+a.cat+'</span></div><h3>'+a.title+'</h3><p style="color:var(--muted);font-size:.94rem;margin-top:6px">'+a.excerpt+'</p><a class="more" href="#/blog/'+a.slug+'">Read more →</a></article>';}
 function auditFormHTML(p){return '<form class="auditForm" novalidate data-p="'+p+'">'
 +'<div class="field"><label for="'+p+'Name">Your name *</label><input id="'+p+'Name" autocomplete="name"><p class="err">Please enter your name.</p></div>'
 +'<div class="field"><label for="'+p+'Email">Business email *</label><input id="'+p+'Email" type="email" autocomplete="email"><p class="err">Please enter a valid business email.</p></div>'
@@ -944,7 +827,7 @@ document.getElementById("articleDetail").innerHTML=
 +'<section class="block article" style="padding-top:26px"><span class="label">'+esc(a.cat)+'</span>'
 +'<h2 style="font-size:2.1rem;margin:10px 0">'+a.title+'</h2>'
 +'<div class="meta"><span>By Faiz Baig, Founder — RankHarbor</span><span>·</span><span>Published '+a.date+'</span><span>·</span><span>Updated '+a.date+'</span><span>·</span><span>'+a.mins+' min read</span></div>'
-+(a.hero?'<img class="article-hero" src="'+a.hero+'" alt="'+esc(a.title)+'">':'<div class="blog-thumb" style="background:'+a.color+';height:190px"><span>'+esc(a.cat.toUpperCase())+' — RANKHARBOR GUIDES</span></div>')
++(a.hero?'<img class="article-hero" src="'+a.hero+'" alt="'+esc(a.title)+'" loading="lazy">':'<div class="blog-thumb" style="background:'+a.color+';height:190px"><span>'+esc(a.cat.toUpperCase())+' — RANKHARBOR GUIDES</span></div>')
 +'<div class="toc"><b>Table of contents</b>'+toc+'</div>'
 +body
 +linksBox
@@ -1018,6 +901,17 @@ var subject=encodeURIComponent("Project Enquiry — "+svc.value);
 var bodyText=encodeURIComponent("Name: "+name.value.trim()+"\nBusiness email: "+email.value.trim()+"\nService: "+svc.value+"\n\n"+msg.value.trim());
 note.className="notice ok";
 note.innerHTML="<b>Your message is ready.</b> This form is not yet connected to a sending service, so send it by email instead — your mail app will open with everything pre-filled.<br><a class='btn' style='margin-top:12px' href='mailto:rankharbor67@gmail.com?subject="+subject+"&body="+bodyText+"'>Send Message by Email</a>";
+});}
+var nf=document.getElementById("newsForm");
+if(nf){nf.addEventListener("submit",function(e){e.preventDefault();
+var email=document.getElementById("nEmail");
+var ok=setErr(email,!validEmail(email.value.trim()));
+var note=document.getElementById("newsNote");note.style.display="block";
+if(!ok){note.className="notice bad";note.innerHTML="<b>Please enter a valid email address</b> to subscribe.";return;}
+var subject=encodeURIComponent("Newsletter Signup \u2014 SEO tips");
+var bodyText=encodeURIComponent("Please add this email to the RankHarbor SEO tips newsletter: "+email.value.trim());
+note.className="notice ok";
+note.innerHTML="<b>Your email checks out.</b> This signup is not yet connected to a mailing service, so use the button below to send your request by email — your mail app will open with everything pre-filled.<br><a class='btn' style='margin-top:12px' href='mailto:rankharbor67@gmail.com?subject="+subject+"&body="+bodyText+"'>Subscribe by Email</a>";
 });}
 
 route();
